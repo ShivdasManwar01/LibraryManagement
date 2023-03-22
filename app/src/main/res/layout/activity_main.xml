@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/library"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="475dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="My Library"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/allbooks"
+        android:layout_width="180dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="42dp"
+        android:text="All Books"
+
+        app:layout_constraintEnd_toEndOf="@+id/library"
+        app:layout_constraintStart_toStartOf="@+id/library"
+        app:layout_constraintTop_toBottomOf="@+id/library" />
+
+    <Button
+        android:id="@+id/currentBook"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Current Book"
+        app:layout_constraintEnd_toEndOf="@+id/allbooks"
+        app:layout_constraintStart_toStartOf="@+id/allbooks"
+        app:layout_constraintTop_toBottomOf="@+id/allbooks" />
+
+    <Button
+        android:id="@+id/alreadyread"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Already Read"
+        app:layout_constraintEnd_toEndOf="@+id/currentBook"
+        app:layout_constraintStart_toStartOf="@+id/currentBook"
+        app:layout_constraintTop_toBottomOf="@+id/currentBook" />
+
+    <Button
+        android:id="@+id/wishlist"
+        android:layout_width="180dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="10dp"
+        android:text="Wishlist"
+        app:layout_constraintEnd_toEndOf="@+id/alreadyread"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="@+id/alreadyread"
+        app:layout_constraintTop_toBottomOf="@+id/alreadyread" />
+
+    <Button
+        android:id="@+id/favBook"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:text="Favourite Book"
+        app:layout_constraintEnd_toEndOf="@+id/wishlist"
+        app:layout_constraintStart_toStartOf="@+id/wishlist"
+        app:layout_constraintTop_toBottomOf="@+id/wishlist" />
+
+    <ImageView
+        android:id="@+id/profile_logo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:layout_constraintBottom_toTopOf="@+id/library"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@mipmap/profilelogo"
+         />
+
+    <Button
+        android:id="@+id/about"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="About"
+        app:layout_constraintEnd_toEndOf="@+id/favBook"
+        app:layout_constraintHorizontal_bias="0.472"
+        app:layout_constraintStart_toStartOf="@+id/favBook"
+        app:layout_constraintTop_toBottomOf="@+id/favBook" />
+
+    <TextView
+        android:id="@+id/copyright"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Develop by shivdas manwar"
+        android:textStyle="italic"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
