@@ -1,6 +1,7 @@
 package com.example.librarymanagement;
 
 import android.content.Context;
+import android.content.Intent;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -57,7 +58,8 @@ public class BookRecyclerViewAdapter extends RecyclerView.Adapter<BookRecyclerVi
         holder.parent.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(context, books.get(position).getName() + " Selected", Toast.LENGTH_SHORT).show();
+                Intent intent=new Intent(context,BookActivity.class);
+                context.startActivity(intent);
             }
         });
 

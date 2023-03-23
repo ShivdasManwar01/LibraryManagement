@@ -7,19 +7,19 @@
     tools:context=".BookActivity">
 
     <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/book_activity_bookimage"
+        android:layout_width="170dp"
+        android:layout_height="220dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="56dp"
         app:layout_constraintEnd_toStartOf="@+id/guideline"
-        app:layout_constraintHorizontal_bias="0.45"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:srcCompat="@tools:sample/avatars" />
 
     <Button
-        android:id="@+id/curr_reading"
+        android:id="@+id/book_activity_curr_reading_btn"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
@@ -29,34 +29,34 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/wanna_read"
+        android:id="@+id/book_activity_want_to_read_btn"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:text="Add To wishlist"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/guideline"
-        app:layout_constraintTop_toBottomOf="@+id/curr_reading" />
+        app:layout_constraintTop_toBottomOf="@+id/book_activity_curr_reading_btn" />
 
     <Button
-        android:id="@+id/already_read"
+        android:id="@+id/book_activity_already_read_btn"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:text="Already Read"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/guideline"
-        app:layout_constraintTop_toBottomOf="@+id/wanna_read" />
+        app:layout_constraintTop_toBottomOf="@+id/book_activity_want_to_read_btn" />
 
     <Button
-        android:id="@+id/add_to_fav"
+        android:id="@+id/book_activity_addToFavourite_btn"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:text="Add to Favourites"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/guideline"
-        app:layout_constraintTop_toBottomOf="@+id/already_read" />
+        app:layout_constraintTop_toBottomOf="@+id/book_activity_already_read_btn" />
 
     <TextView
         android:id="@+id/activity_book_name"
